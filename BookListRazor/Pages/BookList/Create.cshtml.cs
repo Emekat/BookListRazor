@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
 using BookListRazor.Data.Context;
 using BookListRazor.Data.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
@@ -16,9 +18,24 @@ namespace BookListRazor.Pages.BookList
             _db = db;
         }
 
+        [BindProperty]
         public Book Book { get; set; }
         public void OnGet()
         {
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                await _db.Book.AddAsync(Book);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
