@@ -22,4 +22,8 @@
     <ProjectReference Include="..\BookListRazor.Data\BookListRazor.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\BookList\" />
+  </ItemGroup>
+
 </Project>
