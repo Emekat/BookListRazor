@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListRazor", "BookListRazor\BookListRazor.csproj", "{32D049C3-40B5-4D31-A32F-8C5BD116804F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListRazor.Data", "BookListRazor.Data\BookListRazor.Data.csproj", "{6671FBFB-E859-470C-97A1-A97DFDB0C94A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{32D049C3-40B5-4D31-A32F-8C5BD116804F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32D049C3-40B5-4D31-A32F-8C5BD116804F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32D049C3-40B5-4D31-A32F-8C5BD116804F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6671FBFB-E859-470C-97A1-A97DFDB0C94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6671FBFB-E859-470C-97A1-A97DFDB0C94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6671FBFB-E859-470C-97A1-A97DFDB0C94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6671FBFB-E859-470C-97A1-A97DFDB0C94A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
