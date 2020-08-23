@@ -11,8 +11,11 @@ namespace BookListRazor.Data.Models
         [Key]
         public int Id { get; set; }
         [DisplayName("Book Name")]
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Author { get; set; }
+        [Required]
         public string ISBN { get; set; }
     }
 }
