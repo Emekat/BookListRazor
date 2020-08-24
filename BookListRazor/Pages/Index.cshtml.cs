@@ -19,7 +19,7 @@ namespace BookListRazor.Pages
 
         public void OnGet()
         {
-
+            
         }
     }
 }
