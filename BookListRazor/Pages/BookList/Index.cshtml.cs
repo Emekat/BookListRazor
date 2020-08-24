@@ -30,7 +30,7 @@ namespace BookListRazor.Pages.BookList
 
         public async Task<IActionResult> OnPostDelete(int id)
         {
-            var book = await _db.Book.FindAsync();
+            var book = await _db.Book.FindAsync(id);
             if (book == null)
             {
                 return NotFound();
